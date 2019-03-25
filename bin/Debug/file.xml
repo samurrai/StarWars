@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<People xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <vehicles />
+  <gender>n/a</gender>
+  <url>https://swapi.co/api/people/3/</url>
+  <height>96</height>
+  <hair_color>n/a</hair_color>
+  <skin_color>white, blue</skin_color>
+  <starships />
+  <name>R2-D2</name>
+  <films>
+    <string>https://swapi.co/api/films/2/</string>
+    <string>https://swapi.co/api/films/5/</string>
+    <string>https://swapi.co/api/films/4/</string>
+    <string>https://swapi.co/api/films/6/</string>
+    <string>https://swapi.co/api/films/3/</string>
+    <string>https://swapi.co/api/films/1/</string>
+    <string>https://swapi.co/api/films/7/</string>
+  </films>
+  <birth_year>33BBY</birth_year>
+  <homeworld>https://swapi.co/api/planets/8/</homeworld>
+  <species>
+    <string>https://swapi.co/api/species/2/</string>
+  </species>
+  <eye_color>red</eye_color>
+  <mass>32</mass>
+</People>
