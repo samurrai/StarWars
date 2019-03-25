@@ -20,14 +20,16 @@ namespace StarWars
             string id = Console.ReadLine();
             if (int.TryParse(id, out int result))
             {
-                People people = sharpTrooper.GetPeople(id);
-                XmlSerializer xmlSerializer = new XmlSerializer(typeof(People));
+                if(id >= 1 && id <= 88){
+                    People people = sharpTrooper.GetPeople(id);
+                    XmlSerializer xmlSerializer = new XmlSerializer(typeof(People));
 
-                using (FileStream writer = new FileStream("file.xml", FileMode.OpenOrCreate))
-                {
-                    xmlSerializer.Serialize(writer, people);
+                    using (FileStream writer = new FileStream("file.xml", FileMode.OpenOrCreate))
+                    {
+                         xmlSerializer.Serialize(writer, people);
+                    }
+                    Console.WriteLine(people.name);
                 }
-                Console.WriteLine(people.name);
             }
         }
     }
